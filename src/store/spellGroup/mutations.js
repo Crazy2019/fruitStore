@@ -27,6 +27,15 @@ export default{
 		});
 		func.spellGroup.set(states);
 	},
+	ISSPELL(states, obj){
+		states.spellList.map(vla=>{ 
+			if(obj.spellShop.id === vla.spellShop.id){
+				vla.spellState = 1; //拼团失败1
+			}
+		});
+		func.spellGroup.set(states);
+	},
+	
 //	SPELLDEFAULT(state, obj){
 //		states.spellList.map(vla=>{ 
 //			if(obj.spellShop.id === vla.spellShop.id){

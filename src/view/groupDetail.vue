@@ -105,6 +105,17 @@ export default{
 			minuterShow: '',
 			secondsShow: '',
 			state: '',
+			Time: '',
+			shop: '',
+		}
+	},
+	watch:{
+		Time(vla){
+			if(vla === "00:00:00"){
+				this.$store.commit("SPELLFAILURE", this.shop);
+			}else{
+				this.$store.commit("ISSPELL", this.shop);
+			}
 		}
 	},
 	created(){
@@ -113,6 +124,7 @@ export default{
 		this.$store.commit("GETSHOWGEOLOCATION", false);
 		this.getSpellGroupPeople.forEach(vla=>{
 			if(this.getPay[0].id === vla.spellShop.id){
+				this.shop = vla;
 				this.state = vla.spellState;
 				if(vla.userList.length<vla.spellShop.spell){//vla.spellShop.spell  拼团总人数//vla.userList.length  参加人数
 					this.downTime(vla.getTime, vla);
@@ -141,13 +153,14 @@ export default{
 					this.hourShow = this.hourShow>9 ? this.hourShow : '0' + this.hourShow;
 					this.minuterShow = this.minuterShow>9 ? this.minuterShow : '0' + this.minuterShow;
 					this.secondsShow = this.secondsShow>9 ? this.secondsShow : '0' + this.secondsShow;
+					this.Time = this.hourShow+":"+this.secondsShow+":"+this.secondsShow;
 				}
 				else{
 					clearInterval(pageTimer);
 					this.hourShow = "00";
 					this.minuterShow = "00";
 					this.secondsShow = "00";
-					this.$store.commit("SPELLFAILURE", vla);
+					this.Time = "00:00:00";
 				}
 			},0)
 		},
