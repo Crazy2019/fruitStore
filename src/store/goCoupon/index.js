@@ -17,7 +17,7 @@ const state = func.goCoupon.get() || {
 		"price": "20",
 		"fullPrice": "150",
 		"startTime": "2019-01-15",
-		"endTime": "2019-02-07",
+		"endTime": "2019-02-16",
 		"state": 1
 	},
 	{

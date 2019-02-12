@@ -4,8 +4,8 @@ import * as func from "../function.js";
 export default{
 	lingquCoupon(state){ //首页领取优惠券
 		return state.lingquCoupon.filter(vla=>{
-			if(vla.state === 1){
-				return vla
+			if(vla.state === 1 && func.yearMonth() <= vla.endTime){
+				return vla;
 			}
 		});
 	},

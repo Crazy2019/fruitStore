@@ -88,17 +88,17 @@
 				<div class="noProduct" v-else="">暂无拼团失败产品...</div>
 			</div>
 		</div>
-		<tabbar></tabbar>
+		<!--<tabbar></tabbar>-->
 	</div>
 </template>
 
 <script>
 import nav from "../components/nav.vue";
-import tabbar from "../components/tabbar";
+//import tabbar from "../components/tabbar";
 import orderNav from "../components/order/orderNav.vue";
 import { mapGetters } from "vuex";
 export default{
-	components: {'navbar':nav,tabbar,orderNav},
+	components: {'navbar':nav,orderNav},/*,tabbar*/
 	data(){
 		return {
 			msg: 0,
@@ -116,7 +116,7 @@ export default{
 			vm.navTwo = "拼团成功";
 			vm.navThree = "拼团失败";
 			vm.$store.commit("GETNAVBAR", 'spell-Group');
-			vm.$store.dispatch("navContent", true);
+			vm.$store.dispatch("navContent", false);
 			vm.$store.commit("GETNAVTITLE", "我的拼团");
 			vm.successSpell.map(vla=>{vm.successSpellList.push(vla.spellShop);});//拼团成功
 			vm.getSpellList.map(vla=>{vm.allSpellList.push(vla.spellShop);})//拼团中

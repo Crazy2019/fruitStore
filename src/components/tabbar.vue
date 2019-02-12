@@ -4,10 +4,10 @@
 			<span class="tabIcon1" :class="message == 'home' ? 'tabIcon11': ''"></span>
 			<small :class="message == 'home' ? 'small1': ''">首页</small>
 		</mt-tab-item>
-		<mt-tab-item id="spell-Group">
+		<!--<mt-tab-item id="spell-Group">
 			<span class="tabIcon2" :class="message == 'spell-Group' ? 'tabIcon22': ''"></span>
 			<small :class="message == 'spell-Group' ? 'small1': ''">我的拼团</small>
-		</mt-tab-item>
+		</mt-tab-item>-->
 		<mt-tab-item id="order">
 			<span class="tabIcon3" :class="message == 'order' ? 'tabIcon33': ''"></span>
 			<small :class="message == 'order' ? 'small1': ''">购物车</small>
@@ -42,9 +42,9 @@ export default{
 				case 'home': 
 					this.$router.push({path: '/'});
 				break;
-				case 'spell-Group':
-					this.$router.push({path: '/spellGroup'});
-				break;
+//				case 'spell-Group':
+//					this.$router.push({path: '/spellGroup'});
+//				break;
 				case 'order':
 					this.$router.push({path: '/cart'});
 				break;
