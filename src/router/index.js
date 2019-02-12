@@ -21,6 +21,16 @@ import collection  from '@/view/collection.vue'
 Vue.use(Router)
 
 export default new Router({
+//	mode:"history",
+//	scrollBehavior(to, from, savedPosition){
+//		if (savedPosition) {
+//		  return savedPosition
+//		} else {
+//		    if (to.hash) {
+//		       return {selector: to.hash}
+//		    }
+//		}
+//	},
   routes: [
     { path: '/', name: 'index',component: index},//主页
     {path: '/spellGroup',name: 'spellGroup',meta: {auth: true },component: spellGroup},//我的拼团为true时必需登录
@@ -34,7 +44,7 @@ export default new Router({
     {path: '/coupons', name: 'Coupons',component: Coupons},//已领取优惠券
     {path: '/payCoupon', name: 'payCoupon',component: payCoupon},//支付是可用优惠券
     {path: '/goCoupons', name: 'goCoupons',component: goCoupons},//领取优惠券
-    {path: '/spellPay', name: 'spellPay',component: spellPay},//拼团支付
+    {path: '/spellPay', name: 'spellPay',meta: {auth: true },component: spellPay},//拼团支付
     {path: '/groupDetail', name: 'groupDetail',component: groupDetail},//拼团详情
     {path: '/collection', name: 'collection',component: collection},//我的收藏
   ]

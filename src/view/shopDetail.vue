@@ -23,7 +23,7 @@
 							<div class="kt_btn" @click="goSpellPay(list)">立即拼团</div>
 						</div>
 						<div>
-							<div class="kt_priceRight"><b>￥{{list.thePrice | moneyFilter}}</b> / {{list.weight}}</div>
+							<div class="kt_priceRight"><b>{{list.thePrice | moneyFilter}}</b> / {{list.weight}}</div>
 							<div class="kt_btnRight" @click="goCart(list)">原价购买</div>
 						</div>
 					</div>

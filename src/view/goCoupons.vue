@@ -54,9 +54,13 @@ export default{
 	},
 	methods: {
 		getCoupons(obj, index){
-			this.$store.commit('COUPONSPAGE', obj);
-			this.$store.commit('SELECTPAGE',{obj, index});
-			this.toast.popTip("领取成功已放入我的优惠券中");
+			if(this.$store.state.setUset.isLogin === true){
+				this.$store.commit('COUPONSPAGE', obj);
+				this.$store.commit('SELECTPAGE',{obj, index});
+				this.toast.popTip("领取成功已放入我的优惠券中");
+			}else{
+				this.$router.push('/login');
+			}
 		}
 	},
 	computed: {
