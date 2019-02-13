@@ -16,19 +16,22 @@
 			<ul>
 				<li>
 					<router-link to="/spellGroup">
-						<span class="user-num">{{spellGroupLength}}</span>
+						<span class="user-num" v-if="getIsLogin == false">0</span>
+						<span class="user-num" v-else="">{{spellGroupLength}}</span>
 						<span class="user-text">我的拼团</span>
 					</router-link>
 				</li>
 				<li>
 					<router-link to="/coupons">
-						<span class="user-num">{{this.$store.getters.getCouponLength}}</span>
+						<span class="user-num" v-if="getIsLogin == false">0</span>
+						<span class="user-num" v-else="">{{this.$store.getters.getCouponLength}}</span>
 						<span class="user-text">优惠券</span>
 					</router-link>
 				</li>
 				<li>
 					<router-link to="/my/Order">
-						<span class="user-num">{{this.$store.state.cart.orderList.length}}</span>
+						<span class="user-num" v-if="getIsLogin == false">0</span>
+						<span class="user-num" v-else="">{{this.$store.state.cart.orderList.length}}</span>
 						<span class="user-text">我的订单</span>
 					</router-link>
 				</li>
@@ -45,35 +48,35 @@
 					</router-link>
 				</div>
 				<div class="f-user-other">
-					<a href="###">
+					<a @click="noTry()">
 						<img src="../assets/img/invitation.png" class="" alt="" />
 						<p>邀请好友得大礼包</p>
 					</a>
 				</div>
-				<div class="f-user-other">
+				<!--<div class="f-user-other">
 					<a href="###">
 						<img src="../assets/img/single.png" class="" alt="" />
 						<p>我的团单</p>
 					</a>	
-				</div>
+				</div>-->
 			</div>
 			
 			
 			<div class="f-user-item">
 				<div class="f-user-other">
-					<a href="###">
+					<a @click="noTry()">
 						<img src="../assets/img/address.png" class="" alt="" />
 						<p>管理收获地址</p>
 					</a>
 				</div>
 				<div class="f-user-other">
-					<a href="###">
+					<a @click="noTry()">
 						<img src="../assets/img/set.png" class="" alt="" />
 						<p>设置</p>
 					</a>	
 				</div>
 				<div class="f-user-other">
-					<a href="###">
+					<a>
 						<img src="../assets/img/service.png" class="" alt="" />
 						<div>联系方式</div>
 						<span>16625114720</span>
@@ -113,6 +116,9 @@ export default{
 	methods: {
 		exitClick(){
 			this.$store.commit("EXITLOGIN");
+		},
+		noTry(){
+			this.toast.popTip("开发中...");
 		}
 	}
 }

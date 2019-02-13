@@ -8,11 +8,4 @@ export default{
 	getUser(states){
 		return states.user;
 	},
-	getToast(states){
-		return states.showToast
-	},
-	getToastMsg(states){
-		return states.toastMsg
-	}
-	
 }

@@ -6,8 +6,6 @@ import actions from "./actions.js";
 const state = func.session.get() || {
 	isLogin: false,  //未登录
 	user: {'name': '', 'email': ''},
-	showToast: false,
-	toastMsg: '',
 }
 export default{
 	state,

@@ -12,12 +12,4 @@ export default{
 		state.user.email = ''
 		func.session.set(state);
 	},
-	
-	
-	SHOWTOAST(state, obj){
-		state.showToast = obj
-	},
-	SHOWTOASTTEST(state, obj){
-		state.toastMsg = obj;
-	}
 }

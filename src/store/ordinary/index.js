@@ -10,6 +10,8 @@ export default{
 		showGeolocation: true,
 		navTitle: "",
 		priceShow: true, //显示价格and删除商品
+		toastMsg: '',
+		showToast: false,
 	},
 	getters,
 	mutations,

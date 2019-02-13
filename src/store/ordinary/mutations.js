@@ -11,4 +11,10 @@ export default{
 	GETNAVTITLE(state, obj){
 		state.navTitle = obj;
 	},
+	SHOWTOASTTEST(state, obj){
+		state.toastMsg = obj;
+	},
+	SHOWTOAST(state, obj){
+		state.showToast = obj
+	},
 }

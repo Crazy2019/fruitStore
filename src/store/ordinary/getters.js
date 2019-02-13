@@ -6,4 +6,10 @@ export default{
 	showGeolocation: state => state.showGeolocation,
 	navTitle: state => state.navTitle,
 	priceShow: state => state.priceShow,
+	getToastMsg(states){
+		return states.toastMsg
+	},
+	getToast(states){
+		return states.showToast
+	},
 }
