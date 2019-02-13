@@ -46,9 +46,9 @@
 				</div>
 			</div>
 		</div>
-		<button class="aqmethods" @click="payment()">安全支付({{choose.sumToast | moneyFilter}})</button>
+		<button class="aqmethods" @click.prevent="payment()">安全支付({{choose.sumToast | moneyFilter}})</button>
 		
-		<button class="aqmethods" @click="cancelment()">取消支付</button>
+		<button class="aqmethods" @click.prevent="cancelment()">取消支付</button>
 		
 		
 		<!--<div class="popPay" v-show="popPay">

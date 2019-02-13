@@ -11,7 +11,7 @@
 				</div>
 				<div class="coupons-right">
 					<div><p>{{item.startTime}}</p><p>{{item.endTime}}</p></div>
-					<button @click="USE(item)">立即使用</button>
+					<button @click.prevent="USE(item)">立即使用</button>
 				</div>
 				<p style="clear: both;"></p>
 			</div>

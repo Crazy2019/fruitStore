@@ -25,8 +25,8 @@
 						</div>
 						<div class="f-group-other">
 							拼团进行中
-							<button @click="gogroupDetail(item)" class="f-group-other-btn">查看团详情</button>
-							<button @click="noTry()" class="f-group-other-btn" style=" margin-right: 5px;">查看订单详情</button>
+							<button @click.prevent="gogroupDetail(item)" class="f-group-other-btn">查看团详情</button>
+							<button @click.prevent="noTry()" class="f-group-other-btn" style=" margin-right: 5px;">查看订单详情</button>
 						</div>
 					</div>
 				</div>

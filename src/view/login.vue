@@ -13,7 +13,7 @@
 					<input type="password" placeholder="请输入密码" v-model.trim="userPass" />
 					<p style="clear: both;"></p>
 				</div>
-				<button class="successBtn" @click="goSuccess()">登录</button>
+				<button class="successBtn" @click.prevent="goSuccess()">登录</button>
 				<p class="forgetPass"><router-link to="/register">立即注册</router-link></p>
 			</form>
 		</div>
@@ -49,7 +49,7 @@ export default{
 				this.toast.popTip("密码不能为空");
 				return false
 			}else{
-				let emailList = this.$store.state.reg.registerList.map( vla => {return vla.email})
+				let emailList = this.$store.state.reg.registerList.map( vla => {return vla.email});
 				if(!emailList.includes(this.userName)){
 					this.toast.popTip("无效账号");
 				}else{
@@ -61,7 +61,7 @@ export default{
 							if(this.userPass === pass){
 								this.$store.commit("GETUSER", {user, emailOne});
 								this.toast.popTip("欢迎"+user+"登录");
-//								this.$router.push({'path': this.$route.query.redirect});
+								//this.$router.push({'path': this.$route.query.redirect});
 								this.$router.push('/');
 								return false
 							}else{

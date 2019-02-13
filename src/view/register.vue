@@ -23,7 +23,7 @@
 					<input type="password" placeholder="请确定密码" v-model.trim="comfirmPass" />
 					<p style="clear: both;"></p>
 				</div>
-				<button class="successBtn" @click="goRegister()">立即注册</button>
+				<button class="successBtn" @click.prevent="goRegister()">立即注册</button>
 			</form>
 		</div>
 		

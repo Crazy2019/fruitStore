@@ -55,7 +55,7 @@
 			<router-link to="/"> <div class="go-homeOne"></div></router-link>
 			<div class="go-collection" @click="goCollection()" :class="{'go-yicollection': list.collection}"></div>
 			<div class="go-cartL" @click="joinCart"><img src="../assets/img/shopCart.png"/></div>
-			<button @click="goCart(list)" class="go-promptly_tuan">立即购买</button>
+			<button @click.prevent="goCart(list)" class="go-promptly_tuan">立即购买</button>
 		</div>
 	</div>
 </template>

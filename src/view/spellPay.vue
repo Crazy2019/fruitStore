@@ -38,9 +38,9 @@
 					<p class="zfb">支付宝支付</p>
 				</div>
 				
-				<button class="buttonPay" @click="goSpell()">安全支付({{toastMoney | moneyFilter}})</button>
+				<button class="buttonPay" @click.prevent="goSpell()">安全支付({{toastMoney | moneyFilter}})</button>
 		
-				<button class="failuerPay" @click="noPaySpell()">取消支付</button>
+				<button class="failuerPay" @click.prevent="noPaySpell()">取消支付</button>
 			</div>
 		</div>
 	

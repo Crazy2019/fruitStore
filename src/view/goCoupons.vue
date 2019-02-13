@@ -12,7 +12,7 @@
 				</div>
 				<div class="coupons-right">
 					<div><p>{{item.startTime}}</p><p>{{item.endTime}}</p></div>
-					<button @click="getCoupons(item, index)">立即领取</button>
+					<button @click.prevent="getCoupons(item, index)">立即领取</button>
 				</div>
 				<p style="clear: both;"></p>
 			</div>
