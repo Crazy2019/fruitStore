@@ -4,7 +4,7 @@
 
 ## 效果截图
 
-![图片说明1](https://github.com/Crazy2019/fruitStore/blob/master/static/images/index.png)
+<img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/index.png" width="250" height="42">
 
 ## Build Setup
 
