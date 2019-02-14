@@ -80,10 +80,11 @@
 .goShop{float: right;letter-spacing: 1px;width: 28%;background: #ff900d;height: 100%;color: #fff;font-size: 15px;text-align: center;line-height: 50px;display: inline-block;}
 
 
-.spellGroup,.userCenter,.shopping-cart,.shop-detail{margin-bottom: 70px;color: #666;}
+.spellGroup,.userCenter,.shopping-cart,.shop-detail{margin-bottom: 70px;color: #666;background: #fff;min-height: 100%;}
 
 
 /*spellGroup页面*/
+.spellGroup-content{background: #fff;min-height: 100%;}
 .spellGroup{background: #f2f2f2;}
 .spellGroup-box{margin-top: 95px;}/*padding-top: 8px;*/
 .f-groupList{padding: 8px 8px 0;background: #fff;border-bottom: 1px solid #E9E9E9;border-top: 1px solid #E9E9E9;margin-bottom: 8px;}
@@ -111,6 +112,7 @@
 .noProduct{text-align: center;padding: 10px 8px;font-size: 14px;background: #fff;}
 
 /*myOrder页面page*/
+.myOrder{min-height: 100%;background: #fff;}
 .orderNav{position: fixed;left: 0;top: 0;z-index: 20;}
 .myOrder-nav{padding: 10px;position: fixed;z-index: 20;top: 40px;left: 0;width: 100%;background: #fff;border-bottom: 1px solid #E9E9E9;}
 .myOrder-nav ul{border: 1px solid #2AD2C9;border-radius: 5px;height: 35px;line-height: 33px;color: #2AD2C9;font-size: 14px;}
@@ -121,6 +123,8 @@
 .myOrder-list .f-groupList:last-child{margin-bottom: 0;}
 .nobills{text-align: center;font-size: 14px;padding: 20px 8px;margin-top: 90px;}
 
+/*领取优惠券*/
+.page-coupon{background: #fff;min-height: 100%;}
 
 
 /*userCenter 个人中心page*/
@@ -217,6 +221,7 @@
 
 
 /*login登入页面page and register 注册页面*/
+.f-login{background: #fff;min-height: 100%;}
 .f-login-box{margin: 20px 8px;}
 .user-phone{margin-bottom: 16px;height: 40px;border: 1px solid #CCC;border-bottom-left-radius: 4px;border-top-left-radius: 4px;overflow: hidden;}
 .user-phone span{position: relative;background: #EEE;width: 50px;height: 100%;border-right: 1px solid #CCC;float: left;}
@@ -296,7 +301,7 @@
 
 
 /*拼团页面spellPay*/
-.spellPay{background: #F2F2F2;}
+.spellPay{background: #F2F2F2;min-height: 100%;}
 .spellPay-shop-list{margin-bottom: 8px;background: #fff;border-bottom: solid 1px #e6e6e6;border-top: solid 1px #e6e6e6;}
 .spell-ul-li{padding: 0 8px;}
 .spell-ul-li li{display: flex; padding: 10px 0; border-bottom: 1px solid #e6e6e6;}
@@ -349,13 +354,14 @@
 
 
 /*collection 我的收藏*/
+.collection-box{min-height: 100%;background: #fff;}
 .collection{background: #F2F2F2;}
 .collection .f-groupItem{background: #fff;margin-top: 8px;padding: 8px;border-bottom: 1px solid #F1F1F1;}
 .collectionContent{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 
 
 /*toast*/
-.popToast{color: #fff;position: fixed;top: 0;width: 100%;max-width: 640px;margin: 0 auto;background: rgba(0,0,0,0);z-index: 2;height: 100%;}
+.popToast{color: #fff;position: fixed;top: 0;width: 100%;max-width: 640px;margin: 0 auto;background: rgba(0,0,0,0);z-index: 200;height: 100%;}
 .popToast .popBox{position: absolute;min-width: 120px;background: rgba(0,0,0,.8);left: 50%;top: 50%;border-radius: 4px;transform: translate(-50%,-50%);padding: 10px 8px;text-align: center;align-items: center;font-size: 14px;}
 
 

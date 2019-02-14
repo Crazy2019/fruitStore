@@ -1,19 +1,21 @@
 <template>
-	<div class="collection">
-		<navbar></navbar> 
-		<div v-if="getCollectoin.length>0">
-			<div v-for="(item, index) in getCollectoin">
-				<div class="f-groupItem" @click="goDetail(item.id)">
-					<img :src="item.img"/>
-					<div class="f-groupItem-info">
-						<h4>{{item.name}}</h4>
-						<p>规格：{{item.weight}}</p>
-						<p class="collectionContent">{{item.content}}</p>
+	<div class="collection-box">
+		<div class="collection">
+			<navbar></navbar> 
+			<div v-if="getCollectoin.length>0">
+				<div v-for="(item, index) in getCollectoin">
+					<div class="f-groupItem" @click="goDetail(item.id)">
+						<img :src="item.img"/>
+						<div class="f-groupItem-info">
+							<h4>{{item.name}}</h4>
+							<p>规格：{{item.weight}}</p>
+							<p class="collectionContent">{{item.content}}</p>
+						</div>
 					</div>
 				</div>
 			</div>
+			<div v-else class="noProduct">暂无商品收藏...</div>
 		</div>
-		<div v-else class="noProduct">暂无商品收藏...</div>
 	</div>
 </template>
 
