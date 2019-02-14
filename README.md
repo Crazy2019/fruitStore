@@ -1,6 +1,9 @@
 # fruit
 
-> A Vue.js project
+> 水果商城
+
+##效果图片<br>
+![图片说明1](https://github.com/liuhuakun/BrushShots/blob/master/1.PNG)
 
 ## Build Setup
 
