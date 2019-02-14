@@ -2,8 +2,9 @@
 
 > 水果商城
 
-##效果图片<br>
-![图片说明1](https://github.com/liuhuakun/BrushShots/blob/master/1.PNG)
+## 效果截图
+
+![图片说明1](https://github.com/Crazy2019/fruitStore/blob/master/static/images/index.png)
 
 ## Build Setup
 
