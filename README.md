@@ -4,7 +4,7 @@
 
 ## 效果截图
 
-<img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/index.png" width="250" height="442">    <img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/detail.png" width="250" height="442">    <img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/cart1.png" width="250" height="442">    <img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/collection.png" width="250" height="442">    <img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/paymethods.png" width="250" height="442">    <img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/coupon.png" width="250" height="442">
+<img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/index.png" width="250" height="442">          <img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/detail.png" width="250" height="442">          <img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/cart1.png" width="250" height="442">          <img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/collection.png" width="250" height="442">          <img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/paymethods.png" width="250" height="442">          <img src="https://github.com/Crazy2019/fruitStore/blob/master/static/images/coupon.png" width="250" height="442">
 
 ## Build Setup
 
