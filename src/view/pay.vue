@@ -4,7 +4,7 @@
 			<p></p>
 			<div>请在半小时之内完成你的订单，超时订单取消。</div>
 		</div>-->
-		<topNav />
+		<top-nav></top-nav>
 		<!--收获人-->
 		<div class="consignee">
 			<img src="../assets/img/user-img0.jpg" alt="" />

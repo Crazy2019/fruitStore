@@ -1,6 +1,6 @@
 <template>
 	<div class="groupDetail">
-		<navBar></navBar>
+		<nav-bar></nav-bar>
 		
 		<div class="groupDetail-box">
 			

@@ -3,7 +3,7 @@
 		<div class="spellGroup">
 			<navbar class="orderNav"></navbar>
 			
-			<orderNav @getMsgOne="getMsgOne" :navOne="navOne" :navTwo="navTwo" :navThree="navThree"></orderNav>
+			<order-nav @getMsgOne="getMsgOne" :navOne="navOne" :navTwo="navTwo" :navThree="navThree"></order-nav>
 			
 			<div class="spellGroup-box">
 				<div  v-show="msg === 0">

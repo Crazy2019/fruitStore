@@ -1,6 +1,6 @@
 <template>
 	<div class="f-login">
-		<navBar />
+		<nav-bar></nav-bar>
 		<div class="f-login-box">
 			<form>
 				<div class="user-phone">

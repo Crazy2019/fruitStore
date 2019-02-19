@@ -1,6 +1,6 @@
 <template>
 	<div class="spellPay">
-		<navBar></navBar>
+		<nav-bar></nav-bar>
 		<!--收获人-->
 		<div class="consignee">
 			<img src="../assets/img/user-img0.jpg" alt="" />

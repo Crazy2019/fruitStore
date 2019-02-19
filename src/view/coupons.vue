@@ -1,6 +1,6 @@
 <template>
 	<div class="myOrder">
-		<navBar  class="orderNav"></navBar>
+		<nav-bar  class="orderNav"></nav-bar>
 		
 		<div class="myOrder-tab">
 			<orderNav @getMsgOne="getMsgOne" :navOne="navOne" :navTwo="navTwo" :navThree="navThree"></orderNav>

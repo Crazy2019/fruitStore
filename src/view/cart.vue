@@ -1,6 +1,6 @@
 <template>
 	<div class="shopping-cart">
-		<cartNav @editOut="editOut"></cartNav>
+		<cart-nav @editOut="editOut"></cart-nav>
 		
 		<div class="shop-cartBox">
 			<ul class="shop-cart-list" v-if="getCartList.length > 0">
